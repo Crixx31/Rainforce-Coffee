@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rainforce Coffee</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background:#f5f5f5;
+    color:#333;
+}
+
+header{
+    background:linear-gradient(135deg,#3E2723,#5D4037);
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+header h1{
+    font-size:42px;
+}
+
+header p{
+    margin-top:10px;
+    font-size:18px;
+}
+
+.hero{
+    height:400px;
+    background:url('https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=1500&q=80');
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.hero-content{
+    background:rgba(0,0,0,0.65);
+    padding:30px;
+    border-radius:15px;
+    text-align:center;
+    color:white;
+}
+
+.hero-content h2{
+    font-size:40px;
+}
+
+.hero-content p{
+    margin-top:10px;
+    font-size:18px;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    padding:50px 0;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:40px;
+    color:#3E2723;
+    font-size:35px;
+}
+
+.menu-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,0.15);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:20px;
+}
+
+.card-content h3{
+    color:#3E2723;
+    margin-bottom:10px;
+}
+
+.card-content p{
+    color:#666;
+    line-height:1.5;
+}
+
+.price{
+    margin-top:15px;
+    color:#D84315;
+    font-size:24px;
+    font-weight:bold;
+}
+
+.info-section{
+    background:white;
+    padding:40px;
+    border-radius:15px;
+    margin-top:50px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.info-section h2{
+    color:#3E2723;
+    margin-bottom:15px;
+}
+
+footer{
+    margin-top:50px;
+    background:#3E2723;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+.instagram{
+    margin-top:15px;
+}
+
+.instagram a{
+    color:white;
+    text-decoration:none;
+    font-size:18px;
+}
+
+.instagram a:hover{
+    color:#ffb74d;
+}
+
+@media(max-width:768px){
+
+.hero-content h2{
+    font-size:28px;
+}
+
+header h1{
+    font-size:32px;
+}
+
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>☕ Rainforce Coffee</h1>
+    <p>Minuman Favorit Mahasiswa Teknik Sipil</p>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <h2>DAFTAR MENU</h2>
+        <p>Nikmati kopi berkualitas dengan nama khas dunia konstruksi.</p>
+    </div>
+</section>
+
+<div class="container">
+
+    <h2 class="section-title">☕ Menu Kopi</h2>
+
+    <div class="menu-grid">
+
+        <!-- Menu 1 -->
+        <div class="card">
+            <img src="https://awsimages.detik.net.id/community/media/visual/2024/10/17/ilustrasi-kopi-americano_169.jpeg?w=1200">
+            <div class="card-content">
+                <h3>🖤 BETON HITAM</h3>
+                <p>
+                    Americano dengan cita rasa kopi yang kuat,
+                    pahit yang pas, dan cocok menemani aktivitas
+                    kuliah maupun organisasi.
+                </p>
+                <div class="price">Rp12.000</div>
+            </div>
+        </div>
+
+        <!-- Menu 2 -->
+        <div class="card">
+            <img src="https://api.omela.com/storage/content-editor-images/U9RaVTU71MY3VEaA1aZGtBfbltp2yFo39gBNji9x.jpg">
+            <div class="card-content">
+                <h3>🧱 BATU BATA</h3>
+                <p>
+                    Caramel Latte yang lembut dengan perpaduan
+                    espresso, susu, dan karamel manis yang
+                    memberikan energi sepanjang hari.
+                </p>
+                <div class="price">Rp18.000</div>
+            </div>
+        </div>
+
+        <!-- Menu 3 -->
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5A5T4RlUqoA1m4qaV6DhK7Zz_Nc_eKli70w&s">
+            <div class="card-content">
+                <h3>🏗️ PONDASI</h3>
+                <p>
+                    Kopi Susu Gula Aren dengan rasa manis yang
+                    seimbang dan aroma kopi yang khas sebagai
+                    fondasi semangat mahasiswa.
+                </p>
+                <div class="price">Rp17.000</div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="info-section">
+        <h2>📋 Informasi</h2>
+        <p>
+            Rainforce Coffee menghadirkan minuman kopi
+            berkualitas dengan konsep unik bertema konstruksi
+            dan teknik sipil. Cocok dinikmati saat belajar,
+            diskusi kelompok, maupun kegiatan organisasi.
+        </p>
+    </div>
+
+</div>
+
+<footer>
+
+    <h3>Rainforce Coffee</h3>
+
+    <p>
+        Terima kasih telah berkunjung.
+    </p>
+
+    <div class="instagram">
+        📸 Instagram :
+        <a href="#" target="_blank">
+            ...
+        </a>
+    </div>
+
+    <br>
+
+    <p>© 2026 Rainforce Coffee</p>
+
+</footer>
+
+</body>
+</html>
